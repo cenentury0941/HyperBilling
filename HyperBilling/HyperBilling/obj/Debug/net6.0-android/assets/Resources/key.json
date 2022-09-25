@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "xiaomihyperbilling",
+  "private_key_id": "98f33c59edfd1fb39998c778dca723a8293334d9",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCkxp3U37bqeibS\n86F8pfo2FD2g9PSW+Z6p1WUaxnIXuhhdjSi5PoSF9FiVv58SiLiah7bCKNvNSVA6\n1tEPL+XleVWNXzsBbQYT3qClO2+HFlb9MPAixTQko5w30lgc4vtPwAZmz/xV3ryZ\nBYYs8uyVADZNtVzazb54Rk2VG0UbHA9U9UBsCpzm4c1h34MXYesahuod2dreTXDz\ntcmdKoPGGrLjIQ3Wdy0DYpjKEpZXOIl1XMBRDB1dcJXU1qH6L8ulceX2GREzIBqp\nnB/jwfFYZq4pB9Dvnm71mGqkGfrnm2XbDACgz8xZ1hzbKEfkZL87WV6IhYOT8qNx\n0xvK14cbAgMBAAECggEAQs2ra4SPmhyP5PKVQ/3epVIrcjgdeaAWLXCwntxZoTj3\na+Yw3nl0LQLVb1DS4ya/AReIhssd4eqZNmGlPG0E3bYFc11qhLd4wVF++75PBwuN\nlPTkRpSBAWG7kf4bbwqvLLQDZGdqPD4jZD6TGWIbfIUrfvHKhYLod8a46Xy21bgx\nkvjPeATPgSXQTJINzmTiOSWy4bzu3puufcdzRJeKNEsCrjsbxBXnFZ3Dk//jGzF+\nAtSGo2CLpw10v/FL+7KOryrcJZHuWFC2atR/WH9a3xTMw88ryi+iwPqk+EeIW9Be\ndPfLTceDwvAS+ZDq7jTJHczCsOzrOAWWvAEDAtV6sQKBgQDdlJ6DmavpN3qZ+txB\n6viOGyAAC00GgbXGd5GBaw7ErlqdqE9C6Mz3y9hi1PA/shsgnFlOhqWT4Ds9zBte\nAdpDkN+vMnFUnqSyNyDwW88uO5FtijcShTtdqnotw8gfjuVYGnvCQAELych3lXjp\nXkX1kn1KfzjUxkwG63cIMJA8nwKBgQC+Xxl0iFUcL5yuEhFbQrM86b5SdnJirImq\nWvC5niCdMt7d5ODD8PGmM2OBYc1PKGn1A3WzWPxtZcP7Mp+r+qkZ6tFZO+ELxtfg\ngLZ6MTBMAF/mhycTnSFKXWRIwcC/qXu9k6Sb+ddGHiGq9dTwz09Vw9uhXUzzgrPc\nnsvZ6QKoBQKBgAtE1K7ysMiClsyf8nWzwoJPpNf7uyYakKkQSakgTbb4+wjLl4Ra\nnJn5lv6nv7Qtla2Z5fzVYjRcEgc5iybDx1rqUkXxtcvM6alanmU69hVu2B2PCu/5\nMKS5187eBx57wPQzHJorcSItV/Gk+2o67inoElEomTZRA2rSrNIQzjUXAoGACwAd\nzXEPUfiiWiCrJhXdm5h6KfO0OmVz8wccP+2WPt8wp6vRHSFwJUV064YGQhu4u7K+\ne2WZ+IxX3c0YEu0CFoBOJpTiNTcBRHTLlpX/D3U6FW0b4fNDeDObVuTzSV/2yYad\njXHLcb7N/T4FVwDzuaX+q/1jM/MKh6YZa3cecy0CgYBOOWG7ignRGZzm9M4s1DYG\nW3Wr4+zf5Mra7Z4Q6MnN+9JFJjslKhSjGfX7aSbvo6SRQjO+ClESZ6RoxCXJy25p\nxudZ1Cv27wO0RT98C2gUIThvzXKINWUtdb8Up+CMmshNTDV1Hif4Aw5F6PYfxuPb\ncrQ8CrE/3c7qcEsSMWlvVA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-gupnp@xiaomihyperbilling.iam.gserviceaccount.com",
+  "client_id": "108276549997511421565",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gupnp%40xiaomihyperbilling.iam.gserviceaccount.com"
+}

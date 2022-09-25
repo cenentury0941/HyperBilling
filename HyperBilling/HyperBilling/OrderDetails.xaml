@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.OrderDetails"
+             Title=""
+             xmlns:local="clr-namespace:HyperBilling"
+             BackgroundImageSource="background.png"
+             >
+    <ScrollView>
+    <VerticalStackLayout
+        Spacing="15"        
+        HorizontalOptions="Fill"
+        Margin="0,0,0,39">
+
+
+        <Grid ColumnDefinitions="0.1*,0.9*"
+              RowDefinitions="0.99*,0.01*"
+              >
+            <Image
+                Source="onlylogo.png"
+                HeightRequest="64"
+                HorizontalOptions="End"
+                />
+            <Label
+                Text="Order Details"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+            />
+            <Label
+                BackgroundColor="AliceBlue"
+                Margin="25,0,25,0"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                HeightRequest="1"
+                />
+
+        </Grid>
+
+
+
+
+            <Frame
+                MaximumWidthRequest="600"
+                Margin="16,0,16,16"
+                Padding="15,5,15,5"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="48"
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#69000000"
+                          Offset="0.1" />
+                    <GradientStop Color="#39196969"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+                <Grid
+                ColumnDefinitions="0.3*,0.7*"
+                ColumnSpacing="16"
+                HorizontalOptions="StartAndExpand"
+                MaximumWidthRequest="600"
+                WidthRequest="390"
+                Margin="32,0,32,0"
+                >
+            
+            <Label
+                FontSize="16"
+                TextColor="#39FFEE"
+                BackgroundColor="#00000000"
+                Text="CustomerID :"
+                HorizontalOptions="End"
+                VerticalTextAlignment="Center"
+                />
+            
+            <Label
+                x:Name="CustomerID"
+                FontSize="16"
+                TextColor="AliceBlue"
+                BackgroundColor="#00000000"
+                Text="9481103051"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                />
+
+            </Grid>
+            
+        </Frame>
+
+
+
+
+
+            <Frame
+                MaximumWidthRequest="600"
+                Margin="16,0,16,16"
+                Padding="15,5,15,5"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="48"
+               >
+
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#69000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#39196969"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid
+                ColumnDefinitions="0.3*,0.7*"
+                ColumnSpacing="16"
+                HorizontalOptions="StartAndExpand"
+                MaximumWidthRequest="600"
+                WidthRequest="390"
+                Margin="32,0,32,0"
+                >
+
+                    <Label
+                FontSize="16"
+                TextColor="#39FFEE"
+                BackgroundColor="#00000000"
+                Text="Name :"
+                HorizontalOptions="End"
+                VerticalTextAlignment="Center"
+                />
+
+                <Label
+                x:Name="CustomerName"
+                FontSize="16"
+                TextColor="AliceBlue"
+                BackgroundColor="#00000000"
+                Text="Hatsune Miku"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                />
+
+            </Grid>
+
+        </Frame>
+
+
+
+
+            <Frame
+                MaximumWidthRequest="600"
+                Margin="16,0,16,16"
+                Padding="15,5,15,5"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="48"
+               >
+
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#69000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#39196969"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid
+                ColumnDefinitions="0.3*,0.7*"
+                ColumnSpacing="16"
+                HorizontalOptions="StartAndExpand"
+                MaximumWidthRequest="600"
+                WidthRequest="390"
+                Margin="32,0,32,0"
+                >
+
+                    <Label
+                FontSize="16"
+                TextColor="#39FFEE"
+                BackgroundColor="#00000000"
+                Text="Email :"
+                HorizontalOptions="End"
+                VerticalTextAlignment="Center"
+                />
+
+                <Label
+                x:Name="CustomerEmail"
+                FontSize="16"
+                TextColor="AliceBlue"
+                BackgroundColor="#00000000"
+                Text="9481103051"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                />
+
+            </Grid>
+
+        </Frame>
+
+
+
+
+
+            <Frame
+                MaximumWidthRequest="600"
+                Margin="16,0,16,16"
+                Padding="15,5,15,5"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="72"
+               >
+
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#69000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#39196969"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid
+                ColumnDefinitions="0.3*,0.7*"
+                ColumnSpacing="16"
+                HorizontalOptions="StartAndExpand"
+                MaximumWidthRequest="600"
+                WidthRequest="390"
+                Margin="32,0,32,0"
+                >
+
+                    <Label
+                FontSize="16"
+                TextColor="#39FFEE"
+                BackgroundColor="#00000000"
+                Text="Address :"
+                HorizontalOptions="End"
+                VerticalTextAlignment="Center"
+                />
+
+                <Label
+                x:Name="CustomerAddress"
+                FontSize="16"
+                TextColor="AliceBlue"
+                BackgroundColor="#00000000"
+                Text="9481103051"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                />
+
+            </Grid>
+
+        </Frame>
+
+
+
+            <Frame
+                MaximumWidthRequest="600"
+                Margin="16,0,16,16"
+                Padding="15,5,15,5"
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="48"
+               >
+
+                <Frame.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#69000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#39196969"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Frame.Background>
+
+                <Grid
+                ColumnDefinitions="0.3*,0.7*"
+                ColumnSpacing="16"
+                HorizontalOptions="StartAndExpand"
+                MaximumWidthRequest="600"
+                WidthRequest="390"
+                Margin="32,0,32,0"
+                >
+
+                    <Label
+                FontSize="16"
+                TextColor="#39FFEE"
+                BackgroundColor="#00000000"
+                Text="Item Count :"
+                HorizontalOptions="End"
+                VerticalTextAlignment="Center"
+                />
+
+                <Label
+                x:Name="OrderCount"
+                FontSize="16"
+                TextColor="AliceBlue"
+                BackgroundColor="#00000000"
+                Text="9481103051"
+                Grid.Column="1"
+                VerticalTextAlignment="Center"
+                />
+
+            </Grid>
+
+        </Frame>
+
+            <Label
+                BackgroundColor="Cyan"
+                Margin="100,24,100,0"
+                HeightRequest="1"
+                />
+
+
+            <Grid
+            MinimumHeightRequest="120"
+            VerticalOptions="Fill"
+            >
+            <CollectionView
+            x:Name="items"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill"
+            MinimumHeightRequest="120"
+            ItemsUpdatingScrollMode="KeepItemsInView"
+            HeightRequest="300"
+            >
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type local:ItemDetails}"/>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate
+                HorizontalOptions="Fill"
+>
+                    <DataTemplate>
+                        <Grid
+                            >
+                            <Frame
+                Margin="39,16,39,0"
+                Padding="0,5,0,5"
+                HorizontalOptions="Fill"
+                MaximumWidthRequest="600"
+                VerticalOptions="Fill"
+               >
+
+                                <Frame.Background>
+                                    <LinearGradientBrush>
+                                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                                        <GradientStop Color="#39006939"
+                          Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <Grid
+                                    ColumnDefinitions="0.2*,0.6*,0.2*"
+                                    RowDefinitions="0.3*,0.4*,0.3*"
+                                    MinimumHeightRequest="120"
+                                    ColumnSpacing="10"
+                                    >
+
+
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Item ID :"
+                                    Grid.Column="0"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding ItemID}"
+                                    Grid.Column="1"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Item :"
+                                    Grid.Column="0"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding Name}"
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Cost :"
+                                    Grid.Column="0"
+                                    Grid.Row="2"
+                                    VerticalTextAlignment="Start"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding Cost}"
+                                    Grid.Column="1"
+                                    Grid.Row="2"
+                                    VerticalTextAlignment="Start"
+                                    />
+
+
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </Grid>
+
+        <Label
+                BackgroundColor="Cyan"
+                Margin="100,24,100,0"
+                HeightRequest="1"
+                />
+
+        <Label
+                Text="Total : 69,420$"
+                FontSize="Large"
+                TextColor="LightGreen"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="0,16,0,0"
+                FontAttributes="Bold"
+                x:Name="Cost"
+                />
+
+
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

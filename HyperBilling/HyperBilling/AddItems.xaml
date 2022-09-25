@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.AddItems"
+             xmlns:local="clr-namespace:HyperBilling"
+             Title=""
+             BackgroundImageSource="background.png"
+             >
+    <ScrollView>
+    <VerticalStackLayout
+        HorizontalOptions="Fill"
+        Margin="0,0,0,39"
+        >
+        <Grid ColumnDefinitions="0.1*,0.9*"
+              RowDefinitions="0.99*,0.01*"
+              >
+            <Image
+                Source="onlylogo.png"
+                HeightRequest="64"
+                HorizontalOptions="End"
+                />
+            <Label
+                Text="Add Items To Cart"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+            />
+            <Label
+                BackgroundColor="AliceBlue"
+                Margin="25,0,25,0"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                HeightRequest="1"
+                />
+
+        </Grid>
+
+        <Grid
+            MinimumHeightRequest="120"
+            VerticalOptions="Fill"
+            >
+                <CollectionView
+            x:Name="cartitems"
+            HorizontalOptions="Fill"
+            VerticalOptions="Fill"
+            MinimumHeightRequest="120"
+            ItemsUpdatingScrollMode="KeepItemsInView"
+            HeightRequest="500"
+            >
+                    <CollectionView.ItemsSource>
+                <x:Array Type="{x:Type local:ItemDetails}"/>
+            </CollectionView.ItemsSource>
+                
+            <CollectionView.ItemTemplate
+                HorizontalOptions="Fill"
+>
+                <DataTemplate>
+                        <Grid
+                            >
+                            <Frame
+                Margin="39,16,39,0"
+                Padding="0,5,0,5"
+                HorizontalOptions="Fill"
+                MaximumWidthRequest="600"
+                VerticalOptions="Fill"
+               >
+
+                                <Frame.Background>
+                                    <LinearGradientBrush>
+                                            <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                                            <GradientStop Color="#39006939"
+                          Offset="1.0" />
+                                        </LinearGradientBrush>
+                                </Frame.Background>
+                                <Grid
+                                    ColumnDefinitions="0.2*,0.6*,0.2*"
+                                    RowDefinitions="0.3*,0.4*,0.3*"
+                                    MinimumHeightRequest="120"
+                                    ColumnSpacing="10"
+                                    >
+
+
+
+                                        <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Item ID :"
+                                    Grid.Column="0"
+                                    VerticalTextAlignment="End"
+                                    />
+                                    
+                                        <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding ItemID}"
+                                    Grid.Column="1"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                        <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Item :"
+                                    Grid.Column="0"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                        <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding Name}"
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                        <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Cost :"
+                                    Grid.Column="0"
+                                    Grid.Row="2"
+                                    VerticalTextAlignment="Start"
+                                    />
+
+                                        <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding Cost}"
+                                    Grid.Column="1"
+                                    Grid.Row="2"
+                                    VerticalTextAlignment="Start"
+                                    />
+
+
+                                    </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+        </Grid>
+
+
+        <Label
+                BackgroundColor="Cyan"
+                Margin="100,24,100,0"
+                HeightRequest="1"
+                />
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"            
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Entry
+                x:Name="ItemID"
+                SemanticProperties.Hint="Enter Item ID"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                TextColor="#39FFEE"
+                Placeholder="Enter Item ID"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                MaximumWidthRequest="600"  
+                />
+            </Grid>
+        </Frame>
+
+
+        <Button
+                x:Name="additembutton"
+                Text="Add Item"
+                SemanticProperties.Hint="Add Item"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                Margin="39,0,39,0"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Cyan"
+                MaximumWidthRequest="600"
+                Clicked="additembutton_Clicked"
+                >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#0A3234"
+                          Offset="0.1" />
+                    <GradientStop Color="#176464"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+        <Label
+                Text="OR"
+                HorizontalOptions="Center"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                HeightRequest="32"
+                Grid.Column="1"
+                Margin="0,4,0,4"
+                />
+
+        <Button
+                x:Name="scanqrbutton"
+                Text="Scan QR"
+                SemanticProperties.Hint="Add Item"
+                HorizontalOptions="Fill"
+                Margin="39,0,39,0"
+                FontSize="16"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Cyan"
+                MaximumWidthRequest="600"
+                Clicked="scanqrbutton_Clicked"
+                >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#0A3234"
+                          Offset="0.1" />
+                    <GradientStop Color="#176464"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+        <Label
+                BackgroundColor="Cyan"
+                Margin="100,24,100,0"
+                HeightRequest="1"
+                />
+
+            <Label
+                Text="Total : 69,420$"
+                FontSize="Large"
+                TextColor="LightGreen"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="0,16,0,0"
+                FontAttributes="Bold"
+                x:Name="Cost"
+                />
+
+            <Button
+                x:Name="proceedbutton"
+                Text="Place Order"
+                SemanticProperties.Hint="Sign Up"
+                Clicked="proceedbutton_Clicked"
+                HorizontalOptions="Fill"
+                FontSize="20"
+                FontAttributes="Bold"
+                HeightRequest="54"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Black"
+                Margin="39,16,39,0"
+                MaximumWidthRequest="600"
+                >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+                
+            </Button.Background>
+        </Button>
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HyperBilling"
+             x:Class="HyperBilling.FlyOutPage"
+             Title="FlyOutPage"
+             Opacity="1"
+             BackgroundImageSource="background.png"
+             >
+    <VerticalStackLayout
+        Spacing="15"
+        Padding="0,25,0,0"
+        >
+        <Image
+                Source="onlylogo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="150"
+                HorizontalOptions="Center" />
+
+        <Image
+                Source="title.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="300"
+                HorizontalOptions="Center" />
+        
+        <CollectionView x:Name="collectionView"
+                    x:FieldModifier="public"
+                    SelectionMode="Single"
+                    
+                        >
+        <CollectionView.ItemsSource>
+            <x:Array Type="{x:Type local:FlyoutPageItem}">
+                <local:FlyoutPageItem Title="Dashboard"
+                                      IconSource="dashboard.png"
+                                      TargetType="{x:Type local:DashboardPage}" />
+                <local:FlyoutPageItem Title="Create Bill"
+                                      IconSource="createbill.png"
+                                      TargetType="{x:Type local:CreateBill}" />
+                <local:FlyoutPageItem Title="Staging and Dispatch"
+                                      IconSource="dispatch.png"
+                                      TargetType="{x:Type local:Staging}" />
+                <local:FlyoutPageItem Title="Order History"
+                                      IconSource="orderhistory.png"
+                                      TargetType="{x:Type local:OrderHistory}" />
+                <local:FlyoutPageItem Title="Customer History"
+                                      IconSource="customer.png"
+                                      TargetType="{x:Type local:CustomerHistory}" />
+            </x:Array>
+        </CollectionView.ItemsSource>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                <Grid Padding="5,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30"/>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{Binding IconSource}" HeightRequest="50" WidthRequest="50" Margin="15,0,0,0" />
+                    <Label Grid.Column="1"
+                           Margin="20,0"
+                           Text="{Binding Title}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </Grid>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+    </VerticalStackLayout>
+
+</ContentPage>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.SelectStore"
+             BackgroundImageSource="background.png"
+             Title="">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="0"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="onlylogo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="title.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+            <Frame
+                Margin="0,0,0,16"
+                Padding="15,5,15,5"
+                WidthRequest="280"
+               >
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <Entry
+                x:Name="StoreField"
+                SemanticProperties.Hint="Enter Email ID"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                TextColor="#39FFEE"
+                Placeholder="Enter Store ID"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                />
+            </Frame>
+
+            <Button
+                x:Name="storebutton"
+                Text="Accept"
+                SemanticProperties.Hint="Sign Up"
+                Clicked="storebutton_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Black"
+                Margin="0,0,0,16"
+                >
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#196969"
+                          Offset="0.1" />
+                        <GradientStop Color="#399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+
+            <Button
+                x:Name="qrbutton"
+                Text="Scan Store QR"
+                SemanticProperties.Hint="Sign Up"
+                Clicked="qrbutton_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Cyan"
+                >
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#0A3234"
+                          Offset="0.1" />
+                        <GradientStop Color="#176464"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

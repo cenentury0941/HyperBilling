@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.Hub"
+             xmlns:local="clr-namespace:HyperBilling"
+             BackgroundImageSource="background.png"
+             Title="Hub"
+             NavigationPage.HasNavigationBar="False"
+             >
+    <FlyoutPage.Flyout>
+        <local:FlyOutPage x:Name="Flyoutpage"/>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail
+        Padding="0,250,0,0">
+        <NavigationPage>
+            <x:Arguments>
+                <local:DashboardPage/>
+            </x:Arguments>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>

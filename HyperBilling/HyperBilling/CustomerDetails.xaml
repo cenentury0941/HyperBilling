@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.CustomerDetails"
+             Title=""
+             BackgroundImageSource="background.png"
+             >
+    <ScrollView>
+    <VerticalStackLayout
+        HorizontalOptions="Fill"
+        Margin="0,0,0,39"
+        >
+        <Grid ColumnDefinitions="0.1*,0.9*"
+              RowDefinitions="0.99*,0.01*"
+              Margin="0,0,0,64"
+              >
+            <Image
+                Source="onlylogo.png"
+                HeightRequest="64"
+                HorizontalOptions="End"
+                />
+            <Label
+                Text="Enter Customer Details"
+                TextColor="AliceBlue"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+            />
+            <Label
+                BackgroundColor="AliceBlue"
+                Margin="25,0,25,0"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                HeightRequest="1"
+              />
+        </Grid>
+
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"            
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Entry
+                x:Name="PhoneNo"
+                SemanticProperties.Hint="Enter Item ID"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                TextColor="AliceBlue"
+                Placeholder="Enter Phone No"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                MaximumWidthRequest="600"  
+                />
+            </Grid>
+        </Frame>
+
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"            
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Entry
+                x:Name="FirstName"
+                SemanticProperties.Hint="First Name"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                TextColor="AliceBlue"
+                Placeholder="First Name"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                MaximumWidthRequest="600"  
+                />
+            </Grid>
+        </Frame>
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"            
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Entry
+                x:Name="LastName"
+                SemanticProperties.Hint="Last Name"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                TextColor="AliceBlue"
+                Placeholder="Last Name"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                MaximumWidthRequest="600"  
+                />
+            </Grid>
+        </Frame>
+
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"            
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid>
+                <Entry
+                x:Name="EmailID"
+                SemanticProperties.Hint="Email ID"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                TextColor="AliceBlue"
+                Placeholder="Email ID"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                MaximumWidthRequest="600"  
+                />
+            </Grid>
+        </Frame>
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"
+                HeightRequest="120"
+               >
+            <Grid
+                HeightRequest="120"
+                >
+                <Editor
+                x:Name="Address"
+                HorizontalOptions="FillAndExpand"
+                FontSize="16"
+                Placeholder="Address"
+                HeightRequest="120"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                MaximumWidthRequest="600"
+                TextColor="AliceBlue"
+                />
+            </Grid>
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+
+
+        <Frame
+                Margin="39,32,39,16"
+                Padding="15,5,15,5"    
+                MaximumWidthRequest="600"            
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+            <Grid
+                ColumnDefinitions="0.5*,0.5*"
+                HorizontalOptions="FillAndExpand"
+                
+                >
+                <Label
+                    Text="Delivery Mode : "
+                    TextColor="AliceBlue"
+                    FontSize="16"
+                    VerticalTextAlignment="Center"
+                    HorizontalOptions="End"
+                    Margin="0,0,32,0"
+                    />
+                <Picker x:Name="qty"
+                        SelectedIndex="0"
+                        HorizontalOptions="Start"
+                        MaximumWidthRequest="600"
+                        Margin="0,0,0,0"
+                        MinimumWidthRequest="150"
+                        Grid.Column="1"
+                        WidthRequest="150"
+                        >
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Take Away</x:String>
+                            <x:String>Delivery</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+            </Grid>
+        </Frame>
+        
+
+        <Button
+                x:Name="proceedbutton"
+                Text="Proceed"
+                SemanticProperties.Hint="Proceed"
+                HorizontalOptions="Center"
+                WidthRequest="280"
+                FontSize="16"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Cyan"
+                Clicked='proceedbutton_Clicked'
+                Margin="0,16,0,32"
+                >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#0A3234"
+                          Offset="0.1" />
+                    <GradientStop Color="#176464"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+    </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.DashboardPage"
+             Title=""
+             Padding="0,25,0,39"
+             BackgroundImageSource="background.png">
+    <ScrollView>
+        
+    <VerticalStackLayout
+        Spacing="15">
+
+        <Image
+                Source="onlylogo.png"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Image
+                Source="title.png"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Label
+            Text="Welcome to HyperBilling."
+            HorizontalOptions="CenterAndExpand"
+            FontSize="Large"
+            />
+
+        <Label
+            Text="Your one stop destination for flexible, multi-platform approach to billing counters."
+            FontSize="Medium"
+            Padding="25,0,25,0"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            />
+        
+        <Label
+            Text="HyperBilling is a platform independant billing system developed using .Net MAUI. It supports Android, iOS and Windows while at the same time having a completely unified code-base simplifying the development and maintenance requirements."
+            HorizontalOptions="CenterAndExpand"
+            Padding="25,0,25,0"
+            HorizontalTextAlignment="Center"
+            FontSize="Small"
+            TextColor="#0CBDB2"
+            />
+
+            <Label
+                HeightRequest="1"
+                WidthRequest="320"
+                BackgroundColor="#9CFFFA"
+                Margin="0,39,0,39"
+                />
+
+            <Label
+                Text="Core Functionalities"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+            />
+
+
+                <Image
+                    Source="billing.png"
+                    WidthRequest="390"
+                    HorizontalOptions="CenterAndExpand"
+                />
+
+                <Label
+                    Text="Create a cart, add items to it, mention customer and delivery details and perform payments to complete the purchase."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+
+                <Button
+                    x:Name="createbillbutton"
+                    Text="Create Bill"
+                    SemanticProperties.Hint="Sign Up"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
+                    FontSize="16"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#0A2430"
+                    TextColor="Black"
+                    Margin="0,0,0,16"
+                    Clicked="createbillbutton_Clicked"
+                >
+                    <Button.Background>
+                        <LinearGradientBrush>
+                            <GradientStop Color="#196969"
+                          Offset="0.1" />
+                            <GradientStop Color="#399999"
+                          Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+
+            <Label
+                HeightRequest="2"
+                WidthRequest="300"
+                BackgroundColor="#4F8280"
+                Margin="0,16,0,16"
+                />
+
+
+
+            <Image
+                Source="staging.png"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+            <Label
+                    Text="Don't have a network connection? Not a problem, create an order now and it'll be staged in the staging area until connection is established. Orders in the staging area are automatically synced to the server once connected."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+
+            <Button
+                    x:Name="staginganddispatchbutton"
+                    Text="View Staged Orders"
+                    SemanticProperties.Hint="Sign Up"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
+                    FontSize="16"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#0A2430"
+                    TextColor="Black"
+                    Margin="0,0,0,16"
+                    Clicked="staginganddispatchbutton_Clicked"
+                >
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#196969"
+                          Offset="0.1" />
+                        <GradientStop Color="#399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+
+            <Label
+                HeightRequest="2"
+                WidthRequest="300"
+                BackgroundColor="#4F8280"
+                Margin="0,16,0,16"
+                />
+
+            <Image
+                Source="order.png"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+
+            <Label
+                    Text="View and track orders made in the past using the unique order ID generated."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+
+            <Button
+                    x:Name="orderhistorybutton"
+                    Text="View Order History"
+                    SemanticProperties.Hint="Sign Up"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
+                    FontSize="16"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#0A2430"
+                    TextColor="Black"
+                    Margin="0,0,0,16"
+                    Clicked="orderhistorybutton_Clicked"
+                >
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#196969"
+                          Offset="0.1" />
+                        <GradientStop Color="#399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <Label
+                HeightRequest="2"
+                WidthRequest="300"
+                BackgroundColor="#4F8280"
+                Margin="0,16,0,16"
+                />
+
+            <Image
+                Source="customerhistory.png"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+            <Label
+                    Text="View and track orders placed by a certain customer using their unique ID."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+
+            <Button
+                    x:Name="customerhistorybutton"
+                    Text="Create Bill"
+                    SemanticProperties.Hint="Sign Up"
+                    HorizontalOptions="Center"
+                    WidthRequest="250"
+                    FontSize="16"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    BorderColor="#0A2430"
+                    TextColor="Black"
+                    Margin="0,0,0,16"
+                    Clicked="customerhistorybutton_Clicked"
+                >
+                <Button.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#196969"
+                          Offset="0.1" />
+                        <GradientStop Color="#399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+
+            <Label
+                HeightRequest="2"
+                WidthRequest="300"
+                BackgroundColor="#4F8280"
+                Margin="0,16,0,16"
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

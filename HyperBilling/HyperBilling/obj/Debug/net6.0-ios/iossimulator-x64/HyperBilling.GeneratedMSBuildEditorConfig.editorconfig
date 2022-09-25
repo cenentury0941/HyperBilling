@@ -1,0 +1,142 @@
+is_global = true
+build_property.TargetFramework = net6.0-ios
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HyperBilling
+build_property.ProjectDir = D:\Project_Buffer\Xiaomi_Ode2Code\Project\HyperBilling\HyperBilling\
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/AddItems.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.AddItems.xaml
+build_metadata.AdditionalFiles.TargetPath = AddItems.xaml
+build_metadata.AdditionalFiles.RelativePath = AddItems.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/CreateBill.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.CreateBill.xaml
+build_metadata.AdditionalFiles.TargetPath = CreateBill.xaml
+build_metadata.AdditionalFiles.RelativePath = CreateBill.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/CustomerDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.CustomerDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomerDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomerDetails.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/CustomerHistory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.CustomerHistory.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomerHistory.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomerHistory.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/DashboardPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = DashboardPage.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/FlyOutPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.FlyOutPage.xaml
+build_metadata.AdditionalFiles.TargetPath = FlyOutPage.xaml
+build_metadata.AdditionalFiles.RelativePath = FlyOutPage.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/Hub.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.Hub.xaml
+build_metadata.AdditionalFiles.TargetPath = Hub.xaml
+build_metadata.AdditionalFiles.RelativePath = Hub.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = LoginPage.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/OrderCompletion.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.OrderCompletion.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderCompletion.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderCompletion.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/OrderDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.OrderDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderDetails.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/OrderHistory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.OrderHistory.xaml
+build_metadata.AdditionalFiles.TargetPath = OrderHistory.xaml
+build_metadata.AdditionalFiles.RelativePath = OrderHistory.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/PaymentInformation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.PaymentInformation.xaml
+build_metadata.AdditionalFiles.TargetPath = PaymentInformation.xaml
+build_metadata.AdditionalFiles.RelativePath = PaymentInformation.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/qrscan.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.qrscan.xaml
+build_metadata.AdditionalFiles.TargetPath = qrscan.xaml
+build_metadata.AdditionalFiles.RelativePath = qrscan.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/SelectStore.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.SelectStore.xaml
+build_metadata.AdditionalFiles.TargetPath = SelectStore.xaml
+build_metadata.AdditionalFiles.RelativePath = SelectStore.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignUpPage.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/Staging.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.Staging.xaml
+build_metadata.AdditionalFiles.TargetPath = Staging.xaml
+build_metadata.AdditionalFiles.RelativePath = Staging.xaml
+
+[D:/Project_Buffer/Xiaomi_Ode2Code/Project/HyperBilling/HyperBilling/Tracking.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = HyperBilling.Tracking.xaml
+build_metadata.AdditionalFiles.TargetPath = Tracking.xaml
+build_metadata.AdditionalFiles.RelativePath = Tracking.xaml

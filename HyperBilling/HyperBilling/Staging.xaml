@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.Staging"
+             xmlns:local="clr-namespace:HyperBilling"
+             Title=""
+             BackgroundImageSource="background.png">
+    <Grid>
+
+        <VerticalStackLayout
+        Spacing="15"
+        >
+
+
+
+
+        <Image
+                Source="onlylogo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Image
+                Source="title.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Label
+                Text="Staged Orders"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+            />
+
+
+        <Label
+                    Text="Orders that have been recorded locally, but haven't been synced to the database yet."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+
+
+        <Grid
+            MinimumHeightRequest="120"
+            VerticalOptions="Fill"
+            >
+            <CollectionView
+            x:Name="orders"
+            HorizontalOptions="Center"
+            VerticalOptions="Fill"
+            MinimumHeightRequest="120"
+            ItemsUpdatingScrollMode="KeepItemsInView"
+            HeightRequest="500"
+            SelectionMode="Single"
+
+            >
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type local:OrderDetailsItem}"/>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            HorizontalOptions="Center"
+                            HeightRequest="180"
+                            >
+                            <Frame
+                Margin="8,16,8,0"
+                Padding="0,5,0,5"
+                MaximumWidthRequest="600"
+               >
+
+                                <Frame.Background>
+                                    <LinearGradientBrush>
+                                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                                        <GradientStop Color="#39006939"
+                          Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <Grid
+                                    ColumnDefinitions="0.2*,0.25*,0.55*"
+                                    RowDefinitions="0.5*,0.5*"
+                                    MinimumHeightRequest="120"
+                                    ColumnSpacing="10"
+                                    MaximumWidthRequest="390"
+                                    >
+
+
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Order ID :"
+                                    Grid.Column="1"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding OrderID}"
+                                    Grid.Column="2"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Item :"
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding CustomerID}"
+                                    Grid.Column="2"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                    <Image
+                                        x:Name="{Binding OrderID}"
+                                        Source="staged.png"
+                                        Grid.RowSpan="2"
+                                        Margin="32,0,0,0"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        
+                                        />
+
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </Grid>
+
+
+
+
+
+    </VerticalStackLayout>
+        <Label 
+            x:Name="Loading"
+            Text="Loading..."
+            HorizontalTextAlignment="Center"
+            VerticalTextAlignment="Center"
+            VerticalOptions="FillAndExpand" 
+            HorizontalOptions="FillAndExpand" 
+            FontSize="Large"
+            FontAttributes="Bold"
+            IsVisible="False"
+            BackgroundColor="#AA000000"
+            />
+    </Grid>
+</ContentPage>

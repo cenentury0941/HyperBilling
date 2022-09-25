@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.OrderHistory"
+             Title=""
+             BackgroundImageSource="background.png"
+             >
+    <VerticalStackLayout
+        Spacing="15">
+
+        <Image
+                Source="onlylogo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Image
+                Source="title.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Label
+                Text="View Order"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+            />
+
+
+        <Label
+                    Text="Retrieve old orders from the database using it's unique ID."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+        <Frame
+                Margin="0,0,0,16"
+                Padding="15,5,15,5"
+                WidthRequest="280"
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <Entry
+                x:Name="OrderID"
+                SemanticProperties.Hint="Enter Order ID"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                TextColor="#39FFEE"
+                Placeholder="Enter Order ID"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                />
+        </Frame>
+
+        <Button
+                x:Name="fetchorderbutton"
+                Clicked="fetchorderbutton_Clicked"
+                Text="Retrieve Order"
+                SemanticProperties.Hint="Sign Up"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Black"
+                Margin="0,0,0,16"
+                >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+    </VerticalStackLayout>
+</ContentPage>

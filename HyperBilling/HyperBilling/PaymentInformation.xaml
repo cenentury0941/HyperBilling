@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HyperBilling.PaymentInformation"
+             Title=""             
+             BackgroundImageSource="background.png">
+    <VerticalStackLayout        
+        HorizontalOptions="Fill"
+        Margin="0,0,0,39">
+
+        <Grid ColumnDefinitions="0.1*,0.9*"
+              RowDefinitions="0.99*,0.01*"
+              >
+            <Image
+                Source="onlylogo.png"
+                HeightRequest="64"
+                HorizontalOptions="End"
+                />
+            <Label
+                Text="Payment Information"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+                Grid.Column="1"
+                VerticalOptions="Center"
+                HorizontalOptions="Start"
+            />
+            <Label
+                BackgroundColor="AliceBlue"
+                Margin="25,0,25,0"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                HeightRequest="1"
+                />
+
+        </Grid>
+
+        <Grid
+            RowDefinitions="0.25*,0.25*,0.25*,0.25*"
+            ColumnDefinitions="0.5*,0.5*"
+            >
+
+            <Label
+                Text="Total : 69,420$"
+                Grid.ColumnSpan="2"
+                FontSize="Large"
+                TextColor="LightGreen"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Margin="16"
+                FontAttributes="Bold"
+                />
+
+            <ImageButton
+                Source="card_icon.png"
+                HeightRequest="150"
+                Grid.Row="1"
+                Margin="16"
+                CornerRadius="32"
+                x:Name="card"
+                Clicked="card_Clicked"
+                >
+                <ImageButton.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#69399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </ImageButton.Background>
+            </ImageButton>
+
+            <ImageButton
+                Source="online_icon.png"
+                HeightRequest="150"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="16"
+                CornerRadius="32"
+                x:Name="online"
+                Clicked="online_Clicked"
+                >
+                <ImageButton.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#69399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </ImageButton.Background>
+            </ImageButton>
+
+
+
+            <ImageButton
+                Source="gpay_icon.png"
+                HeightRequest="150"
+                Grid.Row="2"
+                Margin="16"
+                CornerRadius="32"
+                x:Name="gpay"
+                Clicked="gpay_Clicked"
+                >
+                <ImageButton.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#69399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </ImageButton.Background>
+            </ImageButton>
+
+            <ImageButton
+                Source="paypal_icon.png"
+                HeightRequest="150"
+                Grid.Row="2"
+                Grid.Column="1"
+                Margin="16"
+                CornerRadius="32"
+                x:Name="paypal"
+                Clicked="paypal_Clicked"
+                >
+                <ImageButton.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#69399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </ImageButton.Background>
+            </ImageButton>
+
+            <ImageButton
+                Source="cash_icon.png"
+                HeightRequest="150"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="16"
+                CornerRadius="32"
+                x:Name="cash"
+                Clicked="cash_Clicked"
+                >
+                <ImageButton.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                        <GradientStop Color="#69399999"
+                          Offset="1.0" />
+                    </LinearGradientBrush>
+                </ImageButton.Background>
+            </ImageButton>
+
+
+
+
+        </Grid>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>

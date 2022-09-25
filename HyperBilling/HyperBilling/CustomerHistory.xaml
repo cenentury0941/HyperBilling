@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HyperBilling"
+             x:Class="HyperBilling.CustomerHistory"
+             Title=""
+             BackgroundImageSource="background.png">
+
+    <ScrollView>
+    
+    <VerticalStackLayout
+        Spacing="15"
+        >
+
+
+
+        <Image
+                Source="onlylogo.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Image
+                Source="title.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                WidthRequest="390"
+                HorizontalOptions="Center" />
+
+        <Label
+                Text="Customer History"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="#9CFFFA"
+                FontSize="Large"
+                FontAttributes="Bold"
+            />
+
+
+        <Label
+                    Text="Retrieve old orders made by a particular customer using their Phone number."
+                    HorizontalOptions="Center"
+                    Padding="12,0,12,0"
+                    HorizontalTextAlignment="Center"
+                    FontSize="Small"
+                    TextColor="#0CBDB2"
+            />
+
+
+        <Frame
+                Margin="0,0,0,16"
+                Padding="15,5,15,5"
+                WidthRequest="280"
+               >
+
+            <Frame.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+            <Entry
+                x:Name="CustomerID"
+                SemanticProperties.Hint="Enter Customer ID"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                TextColor="#39FFEE"
+                Placeholder="Enter Customer ID"
+                PlaceholderColor="#77BBAA"
+                BackgroundColor="#00000000"
+                />
+        </Frame>
+
+        <Button
+                x:Name="fetchorderbutton"
+                Clicked="fetchorderbutton_Clicked"
+                Text="Retrieve Orders"
+                SemanticProperties.Hint="Sign Up"
+                HorizontalOptions="Center"
+                WidthRequest="250"
+                FontSize="16"
+                CornerRadius="10"
+                BorderWidth="2"
+                BorderColor="#0A2430"
+                TextColor="Black"
+                Margin="0,0,0,16"
+                >
+            <Button.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#196969"
+                          Offset="0.1" />
+                    <GradientStop Color="#399999"
+                          Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+
+
+
+        <Grid
+            MinimumHeightRequest="120"
+            VerticalOptions="Fill"
+            >
+            <CollectionView
+            x:Name="ordersview"
+            HorizontalOptions="Center"
+            VerticalOptions="Fill"
+            MinimumHeightRequest="120"
+            ItemsUpdatingScrollMode="KeepItemsInView"
+            HeightRequest="500"
+            SelectionMode="Single"
+
+            >
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type local:OrderDetailsItem}"/>
+                </CollectionView.ItemsSource>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid
+                            HorizontalOptions="Center"
+                            HeightRequest="180"
+                            >
+                            <Frame
+                Margin="8,16,8,0"
+                Padding="0,5,0,5"
+                MaximumWidthRequest="600"
+               >
+
+                                <Frame.Background>
+                                    <LinearGradientBrush>
+                                        <GradientStop Color="#39000000"
+                          Offset="0.1" />
+                                        <GradientStop Color="#39006939"
+                          Offset="1.0" />
+                                    </LinearGradientBrush>
+                                </Frame.Background>
+                                <Grid
+                                    ColumnDefinitions="0.2*,0.25*,0.55*"
+                                    RowDefinitions="0.5*,0.5*"
+                                    MinimumHeightRequest="120"
+                                    ColumnSpacing="10"
+                                    MaximumWidthRequest="390"
+                                    >
+
+
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Order ID :"
+                                    Grid.Column="1"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding OrderID}"
+                                    Grid.Column="2"
+                                    VerticalTextAlignment="End"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="End"
+                                    FontSize="16"
+                                    HorizontalTextAlignment="End"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="Item :"
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                    <Label
+                                    HorizontalOptions="Fill"
+                                    FontSize="16"
+                                    TextColor="AliceBlue"
+                                    BackgroundColor="#00000000"
+                                    Text="{Binding CustomerID}"
+                                    Grid.Column="2"
+                                    Grid.Row="1"
+                                    VerticalTextAlignment="Center"
+                                    />
+
+                                    <Image
+                                        x:Name="{Binding OrderID}"
+                                        Source="staged.png"
+                                        Grid.RowSpan="2"
+                                        Margin="32,0,0,0"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"
+                                        
+                                        />
+
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+        </Grid>
+
+
+
+
+    </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
